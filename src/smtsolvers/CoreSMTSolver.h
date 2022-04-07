@@ -321,7 +321,7 @@ protected:
     vec<lbool>          assigns;          // The current assignments (lbool:s stored as char:s).
     vec<bool>           saved_polar;
     int                 longest_trail = 0;
-    int longest_flip = 0;;
+    uint64_t longest_flip = 0;;
     int myinv = 0;
     vec<bool>           var_seen;
     vec<char>           polarity;         // The preferred polarity of each variable.

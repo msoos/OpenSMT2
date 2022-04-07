@@ -1209,7 +1209,6 @@ struct reduceDB_lt
 void CoreSMTSolver::reduceDB()
 {
     int     i, j;
-    double  extra_lim = cla_inc / learnts.size();    // Remove any clause below this activity
 
     sort(learnts, reduceDB_lt(ca));
     // Don't delete binary or locked clauses. From the rest, delete clauses from the first half
